@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "NorseBold";
+  src: url("../Norse-Bold.otf");
+}
+body {
+  background: rgb(45, 36, 36);
+  background: linear-gradient(233deg, rgb(92, 61, 46) 0%, rgb(184, 92, 56) 49%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  gap: 1em;
+}
+
+.dogPicture {
+  height: 30vh;
+  width: 30vw;
+  display: flex;
+}
+.dogPicture img {
+  height: 500px;
+  width: 500px;
+}
+
+.dogName {
+  height: 20vh;
+  color: rgb(92, 61, 46);
+  font-family: "NorseBold";
+  font-size: 3rem;
+}
+
+.dogBark {
+  display: none;
+}

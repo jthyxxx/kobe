@@ -1,0 +1,45 @@
+$firstColor: rgb(45, 36, 36);
+$secondColor: rgb(92, 61, 46);
+$thirdColor: rgb(184, 92, 56);
+$fourthColor: rgb(224, 192, 151);
+
+
+@font-face {
+    font-family: "NorseBold";
+    src: url('../Norse-Bold.otf');
+}
+
+
+
+body{
+    background: $firstColor;
+    background: linear-gradient(233deg, rgba(92,61,46,1) 0%, rgba(184,92,56,1) 49%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    gap: 1em;
+}
+
+.dogPicture{
+    height: 30vh;
+    width: 30vw;
+    display: flex;
+    img{
+        height: 500px;
+        width: 500px;
+    }
+}
+
+.dogName{
+    height: 20vh;
+    color: $secondColor;
+    font-family: "NorseBold";
+    font-size: 3rem;
+}
+
+.dogBark{
+    display: none;
+}
