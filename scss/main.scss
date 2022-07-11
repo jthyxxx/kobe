@@ -27,19 +27,36 @@ body{
     height: 30vh;
     width: 30vw;
     display: flex;
+    justify-content: center;
     img{
-        height: 500px;
-        width: 500px;
+        height: 30vh;
+        width: 30vw;
     }
 }
 
 .dogName{
-    height: 20vh;
     color: $secondColor;
     font-family: "NorseBold";
-    font-size: 3rem;
+    font-size: 5rem;
+    letter-spacing: 5px;
 }
 
 .dogBark{
-    display: none;
+    visibility: hidden;
+}
+
+button{
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    font-family: "NorseBold";
+    font-size: 2rem;
+    color: $thirdColor;
+    background-color: $fourthColor;
+    border: none;
+
+    &:active{
+        border: 3px solid $secondColor;
+        font-size: 2.3rem;
+    }
 }
